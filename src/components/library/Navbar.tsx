@@ -1,5 +1,5 @@
 import { ICONES } from "@/icons/registry";
-import { LogoAhpIcon } from "djodev-icons";
+import { LogoAhpIcon, GithubIcon } from "djodev-icons";
 import { version } from "../../../package.json";
 
 interface NavbarProps {
@@ -43,6 +43,16 @@ export function Navbar({ onToggleMenu, menuOuvert }: NavbarProps) {
             className="rounded-xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             Documentation
+          </a>
+          <a
+            href="https://github.com/DjoAHP/devicons-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 rounded-xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            aria-label="GitHub"
+          >
+            <GithubIcon className="h-4 w-4" />
+            <span className="hidden lg:inline">GitHub</span>
           </a>
         </nav>
 
