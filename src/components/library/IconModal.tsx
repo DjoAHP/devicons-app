@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { LIBELLE_STYLE, type IconEntry } from "@/icons/registry";
 import { CodeTabs } from "./CodeTabs";
@@ -10,6 +10,8 @@ interface IconModalProps {
 
 /** Modal glassmorphism : aperçu de l'icône + snippets. */
 export function IconModal({ icone, onClose }: IconModalProps) {
+  const [copieNpm, setCopieNpm] = useState(false);
+
   useEffect(() => {
     if (!icone) return;
     const surTouche = (event: KeyboardEvent) => {
@@ -26,6 +28,16 @@ export function IconModal({ icone, onClose }: IconModalProps) {
   if (!icone) return null;
 
   const { Component } = icone;
+
+  const copierNpm = async () => {
+    try {
+      await navigator.clipboard.writeText("npm install djodev-icons");
+      setCopieNpm(true);
+      window.setTimeout(() => setCopieNpm(false), 1800);
+    } catch {
+      setCopieNpm(false);
+    }
+  };
 
   return (
     <div
@@ -55,15 +67,25 @@ export function IconModal({ icone, onClose }: IconModalProps) {
             type="button"
             onClick={onClose}
             aria-label="Fermer"
-            className="shrink-0 rounded-xl border border-border px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            className="shrink-0 cursor-pointer rounded-xl border border-border px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             Fermer
           </button>
         </div>
 
-        <p className="mt-4 rounded-xl border border-border bg-muted/40 px-3 py-2 text-xs text-muted-foreground">
-          Fichier source : <code className="text-accent">{icone.fichier}</code>
-        </p>
+        <div className="mt-4">
+          <p className="mb-1 text-xs font-medium text-muted-foreground">React install</p>
+          <div className="flex items-center gap-2">
+            <code className="flex-1 rounded-xl border border-border bg-muted/40 px-3 py-2 text-xs text-accent">npm install djodev-icons</code>
+            <button
+              type="button"
+              onClick={copierNpm}
+              className="shrink-0 cursor-pointer rounded-xl bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90"
+            >
+              {copieNpm ? "Copié !" : "Copier"}
+            </button>
+          </div>
+        </div>
 
         <div className="mt-5">
           <CodeTabs icone={icone} />

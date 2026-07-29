@@ -63,8 +63,8 @@ export {
   UploadImages03Icon,
 } from "./components/UploadIcon";
 
-export { LogoAhpIcon } from "./components/LogoAhpIcon";
+export { LogoAhpIcon, LogoAhp02Icon } from "./components/LogoAhpIcon";
 
-export { GithubIcon } from "./components/ReseauIcon";
+export { GithubIcon, InstaIcon, MessengerIcon, SkypeIcon, XIcon, DriveIcon, FacebookIcon, GoogleIcon, WindowsIcon } from "./components/ReseauIcon";
 
 export { MixIaIcon } from "./components/IaIcon";

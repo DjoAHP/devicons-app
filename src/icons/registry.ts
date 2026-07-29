@@ -122,12 +122,21 @@ import uploadImages02Raw from "./svg/plein/upload/upload-images02.svg?raw";
 import uploadImages03Raw from "./svg/plein/upload/upload-images03.svg?raw";
 
 import logoAhpRaw from "./svg/plein/logo/logo-ahp.svg?raw";
+import logoAhp02Raw from "./svg/plein/logo/logo-ahp02.svg?raw";
 
 import githubRaw from "./svg/plein/reseaux/github.svg?raw";
+import instaRaw from "./svg/plein/reseaux/insta.svg?raw";
+import messengerRaw from "./svg/plein/reseaux/messenger.svg?raw";
+import skypeRaw from "./svg/plein/reseaux/skype.svg?raw";
+import xRaw from "./svg/plein/reseaux/x.svg?raw";
+import driveRaw from "./svg/plein/reseaux/drive.svg?raw";
+import facebookRaw from "./svg/plein/reseaux/facebook.svg?raw";
+import googleRaw from "./svg/plein/reseaux/google.svg?raw";
+import windowsRaw from "./svg/plein/reseaux/windows.svg?raw";
 
-import { LogoAhpIcon } from "./components/LogoAhpIcon";
+import { LogoAhpIcon, LogoAhp02Icon } from "./components/LogoAhpIcon";
 
-import { GithubIcon } from "./components/ReseauIcon";
+import { GithubIcon, InstaIcon, MessengerIcon, SkypeIcon, XIcon, DriveIcon, FacebookIcon, GoogleIcon, WindowsIcon } from "./components/ReseauIcon";
 
 import mixIaRaw from "./svg/plein/ia/mixia.svg?raw";
 
@@ -563,12 +572,84 @@ const SOURCES: IconSource[] = [
     plein: { Component: LogoAhpIcon, svg: logoAhpRaw },
   },
   {
+    slug: "logo-ahp02",
+    nom: "Logo AHP 02",
+    motsCles: ["logo", "ahp", "marque", "brand", "v2"],
+    categorie: "logo",
+    base: "LogoAhp02",
+    plein: { Component: LogoAhp02Icon, svg: logoAhp02Raw },
+  },
+  {
     slug: "github",
     nom: "GitHub",
     motsCles: ["github", "reseaux", "social", "code", "git"],
     categorie: "reseaux",
     base: "Github",
     plein: { Component: GithubIcon, svg: githubRaw },
+  },
+  {
+    slug: "insta",
+    nom: "Instagram",
+    motsCles: ["instagram", "insta", "reseaux", "social", "photo"],
+    categorie: "reseaux",
+    base: "Insta",
+    plein: { Component: InstaIcon, svg: instaRaw },
+  },
+  {
+    slug: "messenger",
+    nom: "Messenger",
+    motsCles: ["messenger", "facebook", "reseaux", "social", "chat"],
+    categorie: "reseaux",
+    base: "Messenger",
+    plein: { Component: MessengerIcon, svg: messengerRaw },
+  },
+  {
+    slug: "skype",
+    nom: "Skype",
+    motsCles: ["skype", "reseaux", "social", "appel", "video"],
+    categorie: "reseaux",
+    base: "Skype",
+    plein: { Component: SkypeIcon, svg: skypeRaw },
+  },
+  {
+    slug: "x",
+    nom: "X",
+    motsCles: ["x", "twitter", "reseaux", "social"],
+    categorie: "reseaux",
+    base: "X",
+    plein: { Component: XIcon, svg: xRaw },
+  },
+  {
+    slug: "drive",
+    nom: "Drive",
+    motsCles: ["drive", "google", "cloud", "stockage", "reseaux"],
+    categorie: "reseaux",
+    base: "Drive",
+    plein: { Component: DriveIcon, svg: driveRaw },
+  },
+  {
+    slug: "facebook",
+    nom: "Facebook",
+    motsCles: ["facebook", "fb", "reseaux", "social"],
+    categorie: "reseaux",
+    base: "Facebook",
+    plein: { Component: FacebookIcon, svg: facebookRaw },
+  },
+  {
+    slug: "google",
+    nom: "Google",
+    motsCles: ["google", "reseaux", "social", "recherche"],
+    categorie: "reseaux",
+    base: "Google",
+    plein: { Component: GoogleIcon, svg: googleRaw },
+  },
+  {
+    slug: "windows",
+    nom: "Windows",
+    motsCles: ["windows", "microsoft", "os", "reseaux"],
+    categorie: "reseaux",
+    base: "Windows",
+    plein: { Component: WindowsIcon, svg: windowsRaw },
   },
   {
     slug: "mixia",

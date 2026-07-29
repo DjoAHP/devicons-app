@@ -58,7 +58,7 @@ export function CodeTabs({ icone }: CodeTabsProps) {
                 role="tab"
                 aria-selected={actif}
                 onClick={() => setOnglet(item.id)}
-                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+                className={`cursor-pointer rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
                   actif
                     ? "bg-secondary text-secondary-foreground"
                     : "text-muted-foreground hover:text-foreground"
@@ -73,7 +73,7 @@ export function CodeTabs({ icone }: CodeTabsProps) {
         <button
           type="button"
           onClick={copier}
-          className="shrink-0 rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90 focus:outline-none"
+          className="shrink-0 cursor-pointer rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90 focus:outline-none"
         >
           {copie ? "Copié !" : "Copier"}
         </button>
