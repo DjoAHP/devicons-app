@@ -8,7 +8,7 @@ const lecteurBaseProps = {
 
 export const AudioCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
     <path d="M262.31,256.07c0,22.57-.02,45.15.02,67.72,0,3.32-.5,6.31-3.84,7.87-3.41,1.59-6.28.39-8.81-2.06-.33-.32-.71-.6-1.06-.9-13.77-11.85-27.58-23.66-41.27-35.6-1.91-1.67-3.78-2.27-6.23-2.25-10.07.1-20.14.06-30.22.05-8.76-.01-13.03-4.28-13.03-12.99,0-14.7,0-29.41,0-44.11,0-8.25,4.42-12.72,12.58-12.73,10.07-.02,20.15-.12,30.21.07,3.03.06,5.17-.95,7.39-2.88,13.78-12.02,27.67-23.91,41.52-35.84.35-.3.73-.57,1.08-.88,2.28-2.07,4.87-2.66,7.69-1.36,2.83,1.31,3.97,3.75,3.97,6.77,0,6.48-.02,12.97-.02,19.45,0,16.55,0,33.11,0,49.66Z" />
     <path d="M354.11,258.93c-1.27,26.45-10.67,49.5-28.85,68.87-.32.34-.63.68-.97,1-2.54,2.43-5.31,2.65-7.33.59-1.99-2.03-1.79-4.47.48-7.08,2.89-3.31,5.91-6.53,8.54-10.03,27.48-36.64,24.21-88.67-7.56-121.65-.32-.33-.67-.64-.97-.99-2.34-2.65-2.51-5.06-.5-7.09,1.94-1.96,5.31-1.95,7.32.66,5.84,7.58,12.14,14.94,16.95,23.16,9.42,16.12,13.16,33.92,12.89,52.56Z" />
     <path d="M325.9,252.87c-.56,23.17-7.4,40.74-21.24,55.51-1.94,2.07-4.04,3.16-6.73,1.71-3.06-1.65-3.11-5.05-.16-8.16,8.58-9.02,14.43-19.57,16.93-31.74,4.69-22.81-1.16-42.83-16.81-60-1.68-1.84-2.92-3.63-1.89-6.17,1.34-3.3,5.36-3.74,8.25-.79,9.01,9.19,15.36,20.02,18.59,32.45,1.7,6.56,2.41,13.38,3.06,17.17Z" />
@@ -18,7 +18,7 @@ export const AudioCadrerIcon = ({ className, width = 24, height = 24, ...props }
 
 export const BoucleCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
     <path d="M380.39,263.32c-.92,4-1.48,8.13-2.81,11.99-7.68,22.41-26.51,36.57-50.38,37.37-14.55.49-29.13.09-44.21.09,6.27-5.81,8.6-12.78,7.61-21.24.95,0,1.79,0,2.64,0,10.6,0,21.2.02,31.81,0,17.6-.05,31.18-11.25,33.71-28.66,2.9-19.95-6.77-34.13-22.27-39.46-3.23-1.11-6.79-1.73-10.21-1.76-20.15-.16-40.3-.09-60.45-.08-.32,0-.64.05-1.25.1.32.92.57,1.73.88,2.52,1.99,5.03,4.04,10.04,5.93,15.12.33.89-.03,2.04-.08,3.08-.95-.24-2.09-.23-2.81-.77-12.48-9.51-24.92-19.08-37.35-28.67-2.02-1.56-2.03-2.43-.06-3.94,12.5-9.63,25-19.24,37.55-28.81.66-.5,1.72-.47,2.6-.68.1.95.55,2.03.26,2.83-1.91,5.15-4,10.23-6.01,15.34-.29.73-.52,1.49-.91,2.63,1.23,0,2.16,0,3.1,0,18.94,0,37.87-.03,56.81-.01,10.65,0,20.7,2.34,29.79,8.07,14.54,9.16,23.09,22.27,25.63,39.28.13.86.33,1.71.5,2.57v13.11Z" />
     <path d="M229.13,199.31c-6.41,5.86-8.58,12.84-7.67,21.22-.95,0-1.8,0-2.65,0-10.6,0-21.21-.03-31.81,0-17.59.06-31.16,11.33-33.66,28.72-2.86,19.91,6.74,33.98,22.1,39.34,3.3,1.15,6.95,1.79,10.44,1.82,20.07.17,40.15.09,60.22.09.4,0,.79-.06,1.51-.12-1.42-3.59-2.77-7.03-4.13-10.46-.98-2.48-2.03-4.93-2.88-7.46-.27-.8.03-1.78.07-2.68.95.19,2.11.08,2.8.6,8.26,6.24,16.46,12.58,24.67,18.89,4.17,3.2,8.35,6.4,12.51,9.62,2.42,1.88,2.43,2.58.07,4.39-12.31,9.48-24.62,18.96-36.97,28.37-.77.58-1.98.58-2.98.85-.03-1.04-.38-2.19-.04-3.09,2-5.37,4.17-10.69,6.26-16.03.17-.43.21-.91.37-1.61-1.13,0-2.09,0-3.04,0-18.86,0-37.72.02-56.58.01-10.48,0-20.41-2.2-29.39-7.76-15.43-9.54-24.38-23.34-26.3-41.42-1.55-14.54.97-28.26,9.74-40.32,10.51-14.46,24.8-22.33,42.65-22.88,14.71-.46,29.45-.09,44.7-.09Z" />
   </svg>
@@ -26,15 +26,15 @@ export const BoucleCadrerIcon = ({ className, width = 24, height = 24, ...props 
 
 export const MelangeCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
-    <path d="M148.69,202.35h11.89c26.74,0,52.38,10.62,71.29,29.53l24.12,24.12,24.12,24.12c18.91,18.91,44.55,29.53,71.29,29.53h11.89" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="24.9" />
-    <path d="M363.31,202.35h-11.89c-26.74,0-52.38,10.62-71.29,29.53l-24.12,24.12-24.12,24.12c-18.91,18.91-44.55,29.53-71.29,29.53h-11.89" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="24.9" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
+    <path d="M148.69,202.35h11.89c26.74,0,52.38,10.62,71.29,29.53l24.12,24.12,24.12,24.12c18.91,18.91,44.55,29.53,71.29,29.53h11.89" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="24.9" />
+    <path d="M363.31,202.35h-11.89c-26.74,0-52.38,10.62-71.29,29.53l-24.12,24.12-24.12,24.12c-18.91,18.91-44.55,29.53-71.29,29.53h-11.89" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="24.9" />
   </svg>
 );
 
 export const MuteCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
     <path d="M283.58,256.09c0,21.88,0,43.75,0,65.63,0,.93-.03,1.85,0,2.78.12,3.13-.77,5.74-3.78,7.19-3.15,1.52-5.76.47-8.24-1.68-11.99-10.37-24.35-20.34-35.91-31.17-6.42-6.02-12.94-9.07-21.84-8.18-7.45.74-15.03.17-22.56.15-7.32-.03-11.97-4.6-11.98-11.89-.03-15.39-.03-30.79.01-46.18.02-6.94,4.55-11.53,11.51-11.58,10.07-.08,20.14-.17,30.21.06,3.5.08,6.09-.92,8.7-3.21,13.94-12.18,28.04-24.18,42.05-36.29,2.43-2.1,5.03-2.81,7.99-1.5,2.9,1.28,3.91,3.75,3.83,6.78-.02.69,0,1.39,0,2.08,0,22.34,0,44.68,0,67.02Z" />
     <path d="M308.93,255.78c-4.42-4.42-8.75-8.74-13.08-13.07-.82-.82-1.68-1.6-2.42-2.49-1.95-2.37-1.86-5.25.14-7.2,1.91-1.87,5.07-1.98,7.22.06,4.11,3.91,8.09,7.95,12.06,12.01,1.13,1.15,2.03,2.53,3.19,4.01,5.56-5.6,10.54-10.6,15.49-15.62,1.83-1.86,4.17-2.65,6.26-1.28,1.41.93,2.64,3.01,2.79,4.69.13,1.39-1.16,3.2-2.29,4.37-4.65,4.84-9.47,9.51-14.58,14.59,3.19,3.22,6.24,6.31,9.29,9.39,2.04,2.05,4.17,4.02,6.11,6.16,2.21,2.43,2.17,5.45.08,7.46-2.16,2.08-5.02,2.1-7.44-.26-5.06-4.91-10-9.95-15.33-15.27-3.99,3.94-7.91,7.79-11.82,11.66-1.23,1.22-2.39,2.52-3.68,3.69-2.45,2.22-5.34,2.21-7.44.09-2.07-2.1-2.08-5.05.24-7.44,4.43-4.57,8.99-9.03,13.48-13.54.56-.56,1.03-1.2,1.71-2Z" />
   </svg>
@@ -42,34 +42,34 @@ export const MuteCadrerIcon = ({ className, width = 24, height = 24, ...props }:
 
 export const PauseCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
-    <line x1="173.35" y1="224.82" x2="360.28" y2="224.82" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="37.81" />
-    <line x1="151.72" y1="287.18" x2="338.65" y2="287.18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="37.81" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
+    <line x1="173.35" y1="224.82" x2="360.28" y2="224.82" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="37.81" />
+    <line x1="151.72" y1="287.18" x2="338.65" y2="287.18" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="37.81" />
   </svg>
 );
 
 export const PlayCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
     <path d="M350.84,251.04l-161.07-69.51c-3.57-1.54-7.55,1.08-7.55,4.96v139.02c0,3.89,3.98,6.5,7.55,4.96l161.07-69.51c4.35-1.88,4.35-8.05,0-9.92Z" />
   </svg>
 );
 
 export const PrecedentCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
     <polygon points="124.25 256 282.35 325.34 282.35 186.66 124.25 256" />
     <polygon points="229.65 256 387.75 325.34 387.75 186.66 229.65 256" />
-    <line x1="128.89" y1="200.5" x2="128.89" y2="311.5" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="12" />
+    <line x1="128.89" y1="200.5" x2="128.89" y2="311.5" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="12" />
   </svg>
 );
 
 export const SuivantCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
     <polygon points="387.75 256 229.65 186.66 229.65 325.34 387.75 256" />
     <polygon points="282.35 256 124.25 186.66 124.25 325.34 282.35 256" />
-    <line x1="383.11" y1="311.5" x2="383.11" y2="200.5" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="12" />
+    <line x1="383.11" y1="311.5" x2="383.11" y2="200.5" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="12" />
   </svg>
 );
 
@@ -91,15 +91,15 @@ export const BoucleNeutreIcon = ({ className, width = 24, height = 24, ...props 
 
 export const MelangeNeutreIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M74.97,165.49h20.06c45.11,0,88.37,17.92,120.27,49.82l40.7,40.7,40.7,40.7c31.9,31.9,75.16,49.82,120.27,49.82h20.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="42" />
-    <path d="M437.03,165.49h-20.06c-45.11,0-88.37,17.92-120.27,49.82l-40.7,40.7-40.7,40.7c-31.9,31.9-75.16,49.82-120.27,49.82h-20.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="42" />
+    <path d="M74.97,165.49h20.06c45.11,0,88.37,17.92,120.27,49.82l40.7,40.7,40.7,40.7c31.9,31.9,75.16,49.82,120.27,49.82h20.06" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="42" />
+    <path d="M437.03,165.49h-20.06c-45.11,0-88.37,17.92-120.27,49.82l-40.7,40.7-40.7,40.7c-31.9,31.9-75.16,49.82-120.27,49.82h-20.06" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="42" />
   </svg>
 );
 
 export const MoinNeutreIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <line x1="411.34" y1="256" x2="100.66" y2="256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="59.33" />
-    <rect x="30.97" y="30.97" width="450.07" height="450.07" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="41.31" />
+    <line x1="411.34" y1="256" x2="100.66" y2="256" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="59.33" />
+    <rect x="30.97" y="30.97" width="450.07" height="450.07" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="41.31" />
   </svg>
 );
 
@@ -112,8 +112,8 @@ export const MuteNeutreIcon = ({ className, width = 24, height = 24, ...props }:
 
 export const PauseNeutreIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <line x1="75.2" y1="179.59" x2="436.8" y2="179.59" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="73.14" />
-    <line x1="75.2" y1="332.41" x2="436.8" y2="332.41" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="73.14" />
+    <line x1="75.2" y1="179.59" x2="436.8" y2="179.59" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="73.14" />
+    <line x1="75.2" y1="332.41" x2="436.8" y2="332.41" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="73.14" />
   </svg>
 );
 
@@ -125,8 +125,8 @@ export const PlayNeutreIcon = ({ className, width = 24, height = 24, ...props }:
 
 export const PlusNeutreIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <line x1="256" y1="102.61" x2="256" y2="413.29" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="59.33" />
-    <line x1="411.34" y1="257.95" x2="100.66" y2="257.95" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="59.33" />
+    <line x1="256" y1="102.61" x2="256" y2="413.29" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="59.33" />
+    <line x1="411.34" y1="257.95" x2="100.66" y2="257.95" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="59.33" />
   </svg>
 );
 
@@ -134,7 +134,7 @@ export const PrecedentNeutreIcon = ({ className, width = 24, height = 24, ...pro
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
     <polygon points="14.34 256 304.33 383.19 304.33 128.81 14.34 256" />
     <polygon points="207.67 256 497.66 383.19 497.66 128.81 207.67 256" />
-    <line x1="22.85" y1="154.2" x2="22.85" y2="357.8" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="22.01" />
+    <line x1="22.85" y1="154.2" x2="22.85" y2="357.8" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="22.01" />
   </svg>
 );
 
@@ -142,14 +142,14 @@ export const SuivantNeutreIcon = ({ className, width = 24, height = 24, ...props
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
     <polygon points="497.66 256 207.67 128.81 207.67 383.19 497.66 256" />
     <polygon points="304.33 256 14.34 128.81 14.34 383.19 304.33 256" />
-    <line x1="489.15" y1="357.8" x2="489.15" y2="154.2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="22.01" />
+    <line x1="489.15" y1="357.8" x2="489.15" y2="154.2" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="22.01" />
   </svg>
 );
 
 export const DeleteTrackNeutreIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <line x1="163.07" y1="256" x2="348.93" y2="256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="45.89" />
-    <rect x="30.97" y="30.97" width="450.07" height="450.07" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="41.31" />
+    <line x1="163.07" y1="256" x2="348.93" y2="256" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="45.89" />
+    <rect x="30.97" y="30.97" width="450.07" height="450.07" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="41.31" />
   </svg>
 );
 

@@ -1,0 +1,42 @@
+# netlify.toml
+# Configuration pour djodev-icons (TanStack Start + Vite)
+
+[build]
+  command = "npm run build && npm run build:icons"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Redirects pour SPA (TanStack Router)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers de sécurité
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache pour les assets statiques
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache pour les SVGs (icons CDN)
+[[headers]]
+  for = "/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Pas de cache pour index.html
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
