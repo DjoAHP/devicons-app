@@ -100,6 +100,11 @@ function Documentation() {
                 npm install djodev-icons
               </div>
 
+              <h3 className="pt-2 text-lg font-semibold text-foreground">Via pnpm</h3>
+              <div className="rounded-xl bg-muted/60 p-4 font-mono text-sm text-primary">
+                pnpm add djodev-icons
+              </div>
+
               <h3 className="pt-2 text-lg font-semibold text-foreground">Peer dependency</h3>
               <p className="text-sm text-muted-foreground">
                 React &ge; 18.0.0 est requis. Assure-toi que ton projet utilise une version
@@ -135,7 +140,7 @@ function Documentation() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-foreground">
-                  Utiliser dans un composant
+                  Utiliser dans un composant React
                 </h3>
                 <div className="overflow-x-auto rounded-xl bg-muted/60 p-4 font-mono text-sm leading-relaxed text-muted-foreground">
                   <pre>{`function MonComposant() {
@@ -151,35 +156,38 @@ function Documentation() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-foreground">
-                  Props disponibles
+                  Utiliser en HTML (via CDN)
                 </h3>
-                <div className="glass-card rounded-xl p-4">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-border text-left text-muted-foreground">
-                        <th className="pb-2 font-medium">Prop</th>
-                        <th className="pb-2 font-medium">Type</th>
-                        <th className="pb-2 font-medium">Défaut</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-muted-foreground">
-                      <tr className="border-b border-border/50">
-                        <td className="py-2 font-mono text-xs text-primary">className</td>
-                        <td className="py-2 font-mono text-xs">string</td>
-                        <td className="py-2 font-mono text-xs">-</td>
-                      </tr>
-                      <tr className="border-b border-border/50">
-                        <td className="py-2 font-mono text-xs text-primary">width</td>
-                        <td className="py-2 font-mono text-xs">number</td>
-                        <td className="py-2 font-mono text-xs">24</td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 font-mono text-xs text-primary">height</td>
-                        <td className="py-2 font-mono text-xs">number</td>
-                        <td className="py-2 font-mono text-xs">24</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <p className="mb-2 text-sm text-muted-foreground">
+                  Tu peux aussi intégrer les icônes SVG directement dans du HTML sans
+                  framework :
+                </p>
+                <div className="overflow-x-auto rounded-xl bg-muted/60 p-4 font-mono text-sm leading-relaxed text-muted-foreground">
+                  <pre>{`<!-- Icône via img -->
+<img
+  src="https://ton-site.netlify.app/icons/plein/alert.svg"
+  alt="Alerte"
+  width="24"
+  height="24"
+/>
+
+<!-- Icône via inline SVG (copier le contenu SVG) -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 512"
+  width="24"
+  height="24"
+  fill="currentColor"
+>
+  <!-- contenu SVG de l'icône -->
+</svg>
+
+<!-- Icône avec CSS -->
+<img
+  src="/icons/contour/search.svg"
+  alt="Recherche"
+  style="width: 24px; height: 24px; color: #3b82f6;"
+/>`}</pre>
                 </div>
               </div>
 
@@ -187,21 +195,99 @@ function Documentation() {
                 <h3 className="mb-2 text-lg font-semibold text-foreground">
                   Accès CDN (SVG statiques)
                 </h3>
-                <p className="mb-2 text-sm text-muted-foreground">
-                  Les SVGs sont aussi accessibles directement via URL :
+                <p className="mb-3 text-sm text-muted-foreground">
+                  Toutes les icônes sont accessibles en tant que fichiers SVG statiques via
+                  l&apos;URL de ton site déployé. Pas besoin d&apos;npm — tu peux les
+                  utiliser dans n&apos;importe quel projet (Vue, Angular, Svelte, HTML pur,
+                  etc.).
                 </p>
+
+                <h4 className="mb-2 text-sm font-semibold text-foreground">
+                  Structure des URLs
+                </h4>
+                <div className="mb-4 space-y-1 rounded-xl bg-muted/60 p-4 font-mono text-xs text-muted-foreground">
+                  <p className="text-foreground/60">
+                    # Style Plein (rempli)
+                  </p>
+                  <p>
+                    /icons/plein/<span className="text-primary">{"{nom}"}</span>.svg
+                  </p>
+                  <p>
+                    /icons/plein/<span className="text-primary">{"{categorie}"}</span>/
+                    <span className="text-primary">{"{nom}"}</span>.svg
+                  </p>
+                  <p className="mt-2 text-foreground/60">
+                    # Style Contour (trait)
+                  </p>
+                  <p>
+                    /icons/contour/<span className="text-primary">{"{nom}"}</span>.svg
+                  </p>
+                </div>
+
+                <h4 className="mb-2 text-sm font-semibold text-foreground">
+                  Exemples concrets
+                </h4>
                 <div className="space-y-1 rounded-xl bg-muted/60 p-4 font-mono text-xs text-muted-foreground">
                   <p>
                     /icons/plein/<span className="text-primary">alert</span>.svg
                   </p>
                   <p>
-                    /icons/contour/<span className="text-primary">alert</span>.svg
+                    /icons/plein/<span className="text-primary">home</span>.svg
+                  </p>
+                  <p>
+                    /icons/plein/<span className="text-primary">search</span>.svg
                   </p>
                   <p>
                     /icons/plein/corbeille/
                     <span className="text-primary">corbeille01</span>.svg
                   </p>
+                  <p>
+                    /icons/plein/corbeille/
+                    <span className="text-primary">corbeille02</span>.svg
+                  </p>
+                  <p>
+                    /icons/plein/lecteur-cadrer/
+                    <span className="text-primary">play-cadrer</span>.svg
+                  </p>
+                  <p>
+                    /icons/plein/lecteur-neutre/
+                    <span className="text-primary">pause-neutre</span>.svg
+                  </p>
+                  <p>
+                    /icons/contour/<span className="text-primary">alert</span>.svg
+                  </p>
+                  <p>
+                    /icons/contour/<span className="text-primary">home</span>.svg
+                  </p>
+                  <p>
+                    /icons/contour/<span className="text-primary">search</span>.svg
+                  </p>
+                  <p>
+                    /icons/contour/<span className="text-primary">user</span>.svg
+                  </p>
                 </div>
+
+                <h4 className="mb-2 mt-4 text-sm font-semibold text-foreground">
+                  Cas d&apos;usage
+                </h4>
+                <ul className="list-inside list-disc space-y-1 text-sm text-muted-foreground">
+                  <li>
+                    <strong className="text-foreground">Emails HTML</strong> — utilise les
+                    SVGs CDN dans des newsletters ou emails
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Projets non-React</strong> — Vue,
+                    Angular, Svelte, PHP, WordPress...
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Documentation / Sites statiques</strong> —
+                    intégration directe sans build step
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Favicon / Icônes de tab</strong> —
+                    utilise le SVG directement
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
