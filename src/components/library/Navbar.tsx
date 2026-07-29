@@ -39,9 +39,7 @@ export function Navbar({ onToggleMenu, menuOuvert }: NavbarProps) {
             Bibliothèque
           </a>
           <a
-            href="https://lucide.dev"
-            target="_blank"
-            rel="noreferrer"
+            href="/documentation"
             className="rounded-xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             Documentation
