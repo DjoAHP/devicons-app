@@ -8,8 +8,9 @@ import { Navbar } from "@/components/library/Navbar";
 import { SearchBar, type FiltreStyle } from "@/components/library/SearchBar";
 import { Sidebar } from "@/components/library/Sidebar";
 import { ICONES, type CategorieId, type IconEntry } from "@/icons/registry";
+import { version } from "../../package.json";
 
-const TITRE = "@djodev-icons — Bibliothèque d'icônes SVG";
+const TITRE = `DevIcons | v${version}`;
 const DESCRIPTION =
   "Bibliothèque d'icônes SVG maison en React + TypeScript : recherche, styles Plein et Contour, et snippets React / HTML / SVG prêts à copier.";
 
