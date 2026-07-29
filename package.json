@@ -1,5 +1,5 @@
 {
-  "name": "@djodev/icons",
+  "name": "djodev-icons",
   "version": "1.0.1",
   "description": "Bibliothèque d'icônes SVG maison en React + TypeScript",
   "private": false,
@@ -24,6 +24,9 @@
     "directory": "DevIcons_app"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "icons",
     "svg",

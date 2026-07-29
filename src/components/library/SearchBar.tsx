@@ -1,4 +1,4 @@
-import { SearchContourIcon } from "@djodev-icons";
+import { SearchContourIcon } from "djodev-icons";
 import { LIBELLE_STYLE, type IconStyle } from "@/icons/registry";
 
 export type FiltreStyle = IconStyle;

@@ -1,5 +1,5 @@
 import { ICONES } from "@/icons/registry";
-import { LogoAhpIcon } from "@djodev-icons";
+import { LogoAhpIcon } from "djodev-icons";
 import { version } from "../../../package.json";
 
 interface NavbarProps {
@@ -26,7 +26,7 @@ export function Navbar({ onToggleMenu, menuOuvert }: NavbarProps) {
           </button>
           <span className="flex items-center gap-2 truncate text-lg font-black sm:text-xl">
             <LogoAhpIcon className="h-6 w-6 text-foreground" />
-            <span className="texte-gradient">@djodev-icons</span>
+            <span className="texte-gradient">djodev-icons</span>
             <span className="text-xs font-normal text-muted-foreground">v{version}</span>
           </span>
         </div>

@@ -2,7 +2,7 @@ import type { IconEntry } from "@/icons/registry";
 
 /** Snippet d'utilisation avec le composant React de la librairie. */
 export function snippetReact(icone: IconEntry): string {
-  return `import { ${icone.composant} } from "@djodev-icons";
+  return `import { ${icone.composant} } from "djodev-icons";
 
 export function Exemple() {
   return <${icone.composant} className="h-6 w-6 text-sky-400" />;

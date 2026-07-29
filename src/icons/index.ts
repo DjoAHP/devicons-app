@@ -1,5 +1,5 @@
 /**
- * Point d'entrée public de la « librairie » @djodev-icons.
+ * Point d'entrée public de la « librairie » djodev-icons.
  * Ajouter une icône = créer son composant puis l'exporter ici.
  */
 export type { IconProps } from "./components/types";

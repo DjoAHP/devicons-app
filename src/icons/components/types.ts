@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 
 /**
- * Props communes à toutes les icônes @djodev-icons.
+ * Props communes à toutes les icônes djodev-icons.
  * `currentColor` est utilisé partout : la couleur vient donc du `color` CSS parent.
  */
 export interface IconProps extends SVGProps<SVGSVGElement> {

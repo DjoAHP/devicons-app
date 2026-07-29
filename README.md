@@ -1,17 +1,17 @@
-# @djodev/icons — Bibliothèque d'icônes SVG
+# djodev-icons — Bibliothèque d'icônes SVG
 
 Bibliothèque d'icônes SVG maison en React + TypeScript + Tailwind CSS, avec recherche, filtres par style (Plein/Contour) et snippets de code prêts à copier (React, HTML, SVG inline).
 
 ## Installation
 
 ```bash
-npm install @djodev/icons
+npm install djodev-icons
 ```
 
 ## Utilisation
 
 ```tsx
-import { AlertPleinIcon, HomeContourIcon } from "@djodev/icons";
+import { AlertPleinIcon, HomeContourIcon } from "djodev-icons";
 
 function MonComposant() {
   return (
@@ -77,7 +77,7 @@ src/
 │   ├── svg/
 │   │   ├── plein/    # SVGs style "fill/solid"
 │   │   └── contour/  # SVGs style "outline"
-│   ├── index.ts      # Point d'entrée public @djodev/icons
+│   ├── index.ts      # Point d'entrée public djodev-icons
 │   └── registry.ts   # Registre des icônes (métadonnées, recherche, catégories)
 ├── lib/              # Utilitaires (cn, snippets, error handling)
 ├── routes/           # Routes TanStack Router

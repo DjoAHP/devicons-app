@@ -142,7 +142,7 @@ export interface IconEntry {
   motsCles: string[];
   style: IconStyle;
   categorie: CategorieId;
-  /** Nom du composant exporté par @djodev-icons. */
+  /** Nom du composant exporté par djodev-icons. */
   composant: string;
   Component: ComponentType<IconProps>;
   /** Contenu brut du fichier SVG (utilisé pour les snippets). */
