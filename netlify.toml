@@ -1,5 +1,5 @@
 # netlify.toml
-# Configuration pour djodev-icons (TanStack Start + Vite)
+# Configuration pour djodev-icons (TanStack Start + Netlify Functions)
 
 [build]
   command = "npm run build && npm run build:icons"
@@ -7,12 +7,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Redirects pour SPA (TanStack Router)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 # Headers de sécurité
 [[headers]]
@@ -35,8 +29,20 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Pas de cache pour index.html
-[[headers]]
-  for = "/index.html"
-  [headers.values]
-    Cache-Control = "no-cache, no-store, must-revalidate"
+# Rediriger les server functions TanStack Start
+[[redirects]]
+  from = "/_serverFn/*"
+  to = "/_serverFn/:splat"
+  status = 200
+
+# Rediriger les routes API
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+
+# Catch-all pour SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

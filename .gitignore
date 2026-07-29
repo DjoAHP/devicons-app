@@ -40,3 +40,4 @@ bunfig.toml
 
 # Local Netlify folder
 .netlify
+.netlify/
