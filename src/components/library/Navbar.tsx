@@ -33,7 +33,7 @@ export function Navbar({ onToggleMenu, menuOuvert }: NavbarProps) {
 
         <nav aria-label="Navigation principale" className="hidden justify-center gap-1 md:flex">
           <a
-            href="#grille"
+            href="/#grille"
             className="rounded-xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             Bibliothèque
