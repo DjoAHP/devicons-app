@@ -8,6 +8,7 @@ import path from "path";
 export default defineConfig({
   resolve: {
     alias: {
+      "@": path.resolve(__dirname, "src"),
       "djodev-icons": path.resolve(__dirname, "src/icons/index.ts"),
     },
   },

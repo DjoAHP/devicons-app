@@ -66,3 +66,5 @@ export {
 export { LogoAhpIcon } from "./components/LogoAhpIcon";
 
 export { GithubIcon } from "./components/ReseauIcon";
+
+export { MixIaIcon } from "./components/IaIcon";

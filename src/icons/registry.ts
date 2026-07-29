@@ -129,6 +129,10 @@ import { LogoAhpIcon } from "./components/LogoAhpIcon";
 
 import { GithubIcon } from "./components/ReseauIcon";
 
+import mixIaRaw from "./svg/plein/ia/mixia.svg?raw";
+
+import { MixIaIcon } from "./components/IaIcon";
+
 export type IconStyle = "plein" | "contour";
 
 export interface IconEntry {
@@ -151,7 +155,7 @@ export interface IconEntry {
   fichier: string;
 }
 
-export type CategorieId = "interface" | "navigation" | "alertes" | "utilisateur" | "cubic" | "lecteur_audio" | "corbeille" | "upload" | "logo" | "reseaux";
+export type CategorieId = "interface" | "navigation" | "alertes" | "utilisateur" | "cubic" | "lecteur_audio" | "corbeille" | "upload" | "logo" | "reseaux" | "ia";
 
 export const CATEGORIES: { id: CategorieId; libelle: string }[] = [
   { id: "navigation", libelle: "Navigation" },
@@ -164,6 +168,7 @@ export const CATEGORIES: { id: CategorieId; libelle: string }[] = [
   { id: "upload", libelle: "Upload" },
   { id: "logo", libelle: "Logo" },
   { id: "reseaux", libelle: "Réseaux" },
+  { id: "ia", libelle: "Intelligence Artificielle" },
 ];
 
 interface IconSource {
@@ -311,7 +316,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "play-fleche-cubic",
-    nom: "Play Fleche Cubic",
+    nom: "Play Flèche",
     motsCles: ["play", "fleche", "cubic", "lecture", "video"],
     categorie: "cubic",
     base: "PlayFlecheCubic",
@@ -327,7 +332,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "audio-cadrer",
-    nom: "Audio Cadrer",
+    nom: "Audio C.",
     motsCles: ["audio", "cadrer", "lecteur", "son", "volume"],
     categorie: "lecteur_audio",
     base: "AudioCadrer",
@@ -335,7 +340,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "boucle-cadrer",
-    nom: "Boucle Cadrer",
+    nom: "Boucle C.",
     motsCles: ["boucle", "cadrer", "lecteur", "repeat"],
     categorie: "lecteur_audio",
     base: "BoucleCadrer",
@@ -343,7 +348,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "melange-cadrer",
-    nom: "Melange Cadrer",
+    nom: "Mélange C.",
     motsCles: ["melange", "cadrer", "lecteur", "shuffle"],
     categorie: "lecteur_audio",
     base: "MelangeCadrer",
@@ -351,7 +356,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "mute-cadrer",
-    nom: "Mute Cadrer",
+    nom: "Mute C.",
     motsCles: ["mute", "cadrer", "lecteur", "son", "couper"],
     categorie: "lecteur_audio",
     base: "MuteCadrer",
@@ -359,7 +364,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "pause-cadrer",
-    nom: "Pause Cadrer",
+    nom: "Pause C.",
     motsCles: ["pause", "cadrer", "lecteur", "arreter"],
     categorie: "lecteur_audio",
     base: "PauseCadrer",
@@ -367,7 +372,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "play-cadrer",
-    nom: "Play Cadrer",
+    nom: "Play C.",
     motsCles: ["play", "cadrer", "lecteur", "lecture", "demarrer"],
     categorie: "lecteur_audio",
     base: "PlayCadrer",
@@ -375,7 +380,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "precedent-cadrer",
-    nom: "Precedent Cadrer",
+    nom: "Préc. C.",
     motsCles: ["precedent", "cadrer", "lecteur", "arriere"],
     categorie: "lecteur_audio",
     base: "PrecedentCadrer",
@@ -383,7 +388,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "suivant-cadrer",
-    nom: "Suivant Cadrer",
+    nom: "Suiv. C.",
     motsCles: ["suivant", "cadrer", "lecteur", "avant"],
     categorie: "lecteur_audio",
     base: "SuivantCadrer",
@@ -391,7 +396,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "audio-neutre",
-    nom: "Audio Neutre",
+    nom: "Audio N.",
     motsCles: ["audio", "neutre", "lecteur", "son", "volume"],
     categorie: "lecteur_audio",
     base: "AudioNeutre",
@@ -399,7 +404,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "boucle-neutre",
-    nom: "Boucle Neutre",
+    nom: "Boucle N.",
     motsCles: ["boucle", "neutre", "lecteur", "repeat"],
     categorie: "lecteur_audio",
     base: "BoucleNeutre",
@@ -407,7 +412,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "melange-neutre",
-    nom: "Melange Neutre",
+    nom: "Mélange N.",
     motsCles: ["melange", "neutre", "lecteur", "shuffle"],
     categorie: "lecteur_audio",
     base: "MelangeNeutre",
@@ -415,7 +420,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "moin-neutre",
-    nom: "Moin Neutre",
+    nom: "Moins N.",
     motsCles: ["moin", "neutre", "lecteur", "moins", "volume"],
     categorie: "lecteur_audio",
     base: "MoinNeutre",
@@ -423,7 +428,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "mute-neutre",
-    nom: "Mute Neutre",
+    nom: "Mute N.",
     motsCles: ["mute", "neutre", "lecteur", "son", "couper"],
     categorie: "lecteur_audio",
     base: "MuteNeutre",
@@ -431,7 +436,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "pause-neutre",
-    nom: "Pause Neutre",
+    nom: "Pause N.",
     motsCles: ["pause", "neutre", "lecteur", "arreter"],
     categorie: "lecteur_audio",
     base: "PauseNeutre",
@@ -439,7 +444,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "play-neutre",
-    nom: "Play Neutre",
+    nom: "Play N.",
     motsCles: ["play", "neutre", "lecteur", "lecture", "demarrer"],
     categorie: "lecteur_audio",
     base: "PlayNeutre",
@@ -447,7 +452,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "plus-neutre",
-    nom: "Plus Neutre",
+    nom: "Plus N.",
     motsCles: ["plus", "neutre", "lecteur", "volume", "ajouter"],
     categorie: "lecteur_audio",
     base: "PlusNeutre",
@@ -455,7 +460,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "precedent-neutre",
-    nom: "Precedent Neutre",
+    nom: "Préc. N.",
     motsCles: ["precedent", "neutre", "lecteur", "arriere"],
     categorie: "lecteur_audio",
     base: "PrecedentNeutre",
@@ -463,7 +468,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "suivant-neutre",
-    nom: "Suivant Neutre",
+    nom: "Suiv. N.",
     motsCles: ["suivant", "neutre", "lecteur", "avant"],
     categorie: "lecteur_audio",
     base: "SuivantNeutre",
@@ -471,7 +476,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "delete-track-neutre",
-    nom: "Delete Track Neutre",
+    nom: "Del. Track",
     motsCles: ["delete", "track", "neutre", "lecteur", "supprimer"],
     categorie: "lecteur_audio",
     base: "DeleteTrackNeutre",
@@ -479,7 +484,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "eq-neutre",
-    nom: "EQ Neutre",
+    nom: "EQ N.",
     motsCles: ["eq", "equalizer", "neutre", "lecteur", "audio"],
     categorie: "lecteur_audio",
     base: "EqNeutre",
@@ -487,7 +492,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "corbeille01",
-    nom: "Corbeille 01",
+    nom: "Corb. 01",
     motsCles: ["corbeille", "poubelle", "supprimer", "delete", "trash"],
     categorie: "corbeille",
     base: "Corbeille01",
@@ -495,7 +500,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "corbeille02",
-    nom: "Corbeille 02",
+    nom: "Corb. 02",
     motsCles: ["corbeille", "poubelle", "supprimer", "delete", "trash"],
     categorie: "corbeille",
     base: "Corbeille02",
@@ -503,7 +508,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "corbeille03",
-    nom: "Corbeille 03",
+    nom: "Corb. 03",
     motsCles: ["corbeille", "poubelle", "supprimer", "delete", "trash"],
     categorie: "corbeille",
     base: "Corbeille03",
@@ -511,7 +516,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "corbeille04",
-    nom: "Corbeille 04",
+    nom: "Corb. 04",
     motsCles: ["corbeille", "poubelle", "supprimer", "delete", "trash"],
     categorie: "corbeille",
     base: "Corbeille04",
@@ -519,7 +524,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "corbeille05",
-    nom: "Corbeille 05",
+    nom: "Corb. 05",
     motsCles: ["corbeille", "poubelle", "supprimer", "delete", "trash"],
     categorie: "corbeille",
     base: "Corbeille05",
@@ -527,7 +532,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "upload-images01",
-    nom: "Upload Images 01",
+    nom: "Upload 01",
     motsCles: ["upload", "images", "telecharger", "envoyer"],
     categorie: "upload",
     base: "UploadImages01",
@@ -535,7 +540,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "upload-images02",
-    nom: "Upload Images 02",
+    nom: "Upload 02",
     motsCles: ["upload", "images", "telecharger", "envoyer"],
     categorie: "upload",
     base: "UploadImages02",
@@ -543,7 +548,7 @@ const SOURCES: IconSource[] = [
   },
   {
     slug: "upload-images03",
-    nom: "Upload Images 03",
+    nom: "Upload 03",
     motsCles: ["upload", "images", "telecharger", "envoyer"],
     categorie: "upload",
     base: "UploadImages03",
@@ -564,6 +569,14 @@ const SOURCES: IconSource[] = [
     categorie: "reseaux",
     base: "Github",
     plein: { Component: GithubIcon, svg: githubRaw },
+  },
+  {
+    slug: "mixia",
+    nom: "MixIa",
+    motsCles: ["ia", "intelligence artificielle", "ai", "mixia", "robot"],
+    categorie: "ia",
+    base: "MixIa",
+    plein: { Component: MixIaIcon, svg: mixIaRaw },
   },
 ];
 

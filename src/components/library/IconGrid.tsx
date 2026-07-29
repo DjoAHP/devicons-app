@@ -21,7 +21,7 @@ export function IconGrid({ icones, onSelect, onCopy }: IconGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] gap-2">
       {icones.map((icone) => (
         <IconCard key={icone.id} icone={icone} onSelect={onSelect} onCopy={onCopy} />
       ))}

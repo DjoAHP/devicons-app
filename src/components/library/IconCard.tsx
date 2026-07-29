@@ -11,21 +11,21 @@ export function IconCard({ icone, onSelect, onCopy }: IconCardProps) {
   const { Component } = icone;
 
   return (
-    <div className="group flex flex-col items-center gap-1">
-      <div className="glass-card relative rounded-xl p-3">
+    <div className="group flex flex-col items-center gap-0.5">
+      <div className="glass-card relative rounded-lg p-2">
         <button
           type="button"
           onClick={() => onSelect(icone)}
-          className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl text-foreground transition-colors hover:text-accent focus:outline-none"
+          className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-lg text-foreground transition-colors hover:text-accent focus:outline-none"
           aria-label={`Voir les snippets de l'icône ${icone.nom}`}
           title="Information"
         >
-          <Component className="h-8 w-8" aria-hidden="true" />
+          <Component className="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
 
-      <div className="flex items-center gap-1">
-        <span className="block truncate text-center text-xs font-medium text-foreground">
+      <div className="flex w-full items-center justify-center gap-0.5 overflow-hidden">
+        <span className="block max-w-[70px] truncate text-center text-[10px] font-medium text-foreground" title={icone.nom}>
           {icone.nom}
         </span>
         <button
@@ -33,7 +33,7 @@ export function IconCard({ icone, onSelect, onCopy }: IconCardProps) {
           onClick={() => onCopy(icone)}
           aria-label={`Copier le SVG de l'icône ${icone.nom}`}
           title="Copier le SVG"
-          className="cursor-pointer rounded-md p-0.5 text-muted-foreground hover:bg-muted/60 hover:text-accent focus:outline-none"
+          className="cursor-pointer rounded p-0.5 text-muted-foreground hover:bg-muted/60 hover:text-accent focus:outline-none"
         >
           <svg
             viewBox="0 0 24 24"

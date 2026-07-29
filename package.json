@@ -1,6 +1,6 @@
 {
   "name": "djodev-icons",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Bibliothèque d'icônes SVG maison en React + TypeScript",
   "private": false,
   "sideEffects": false,

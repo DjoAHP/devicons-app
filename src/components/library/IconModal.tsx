@@ -41,8 +41,8 @@ export function IconModal({ icone, onClose }: IconModalProps) {
       >
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
           <div className="flex min-w-0 items-center gap-4">
-            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-muted/60 text-accent">
-              <Component className="h-8 w-8" aria-hidden="true" />
+            <span className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-muted/60 text-accent">
+              <Component className="h-20 w-20" aria-hidden="true" />
             </span>
             <div className="min-w-0">
               <h2 className="truncate text-lg font-semibold text-foreground">{icone.nom}</h2>

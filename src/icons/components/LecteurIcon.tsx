@@ -42,9 +42,9 @@ export const MuteCadrerIcon = ({ className, width = 24, height = 24, ...props }:
 
 export const PauseCadrerIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
-    <line x1="173.35" y1="224.82" x2="360.28" y2="224.82" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="37.81" />
-    <line x1="151.72" y1="287.18" x2="338.65" y2="287.18" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="37.81" />
+    <path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35h0Z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="29" />
+    <line x1="200.71" y1="314.98" x2="233.79" y2="197.02" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="39.69" />
+    <line x1="278.21" y1="314.98" x2="311.29" y2="197.02" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="39.69" />
   </svg>
 );
 
@@ -112,8 +112,8 @@ export const MuteNeutreIcon = ({ className, width = 24, height = 24, ...props }:
 
 export const PauseNeutreIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
   <svg {...lecteurBaseProps} className={className} width={width} height={height} {...props}>
-    <line x1="75.2" y1="179.59" x2="436.8" y2="179.59" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="73.14" />
-    <line x1="75.2" y1="332.41" x2="436.8" y2="332.41" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="73.14" />
+    <line x1="179.59" y1="436.8" x2="179.59" y2="75.2" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="73.14" />
+    <line x1="332.41" y1="436.8" x2="332.41" y2="75.2" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="73.14" />
   </svg>
 );
 
