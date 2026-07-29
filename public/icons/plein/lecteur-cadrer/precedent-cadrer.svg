@@ -1,0 +1,6 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path d="M391.57,359.54H26.67l41.99-166.74c5.97-23.72,27.31-40.35,51.77-40.35h364.9l-41.99,166.74c-5.97,23.72-27.31,40.35-51.77,40.35Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="29"/>
+<polygon points="124.25 256 282.35 325.34 282.35 186.66 124.25 256"/>
+<polygon points="229.65 256 387.75 325.34 387.75 186.66 229.65 256"/>
+<line x1="128.89" y1="200.5" x2="128.89" y2="311.5" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="12"/>
+</svg>

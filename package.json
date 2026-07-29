@@ -1,13 +1,51 @@
 {
-  "name": "@djodev-icons",
+  "name": "@djodev/icons",
   "version": "1.0.1",
-  "private": true,
+  "description": "Bibliothèque d'icônes SVG maison en React + TypeScript",
+  "private": false,
   "sideEffects": false,
   "type": "module",
+  "main": "./dist/lib/djodev-icons.es.js",
+  "module": "./dist/lib/djodev-icons.es.js",
+  "types": "./dist/lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lib/djodev-icons.es.js",
+      "types": "./dist/lib/index.d.ts"
+    },
+    "./style.css": "./dist/lib/style.css"
+  },
+  "files": [
+    "dist/lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DjoAHP/devicons-app.git",
+    "directory": "DevIcons_app"
+  },
+  "license": "MIT",
+  "keywords": [
+    "icons",
+    "svg",
+    "react",
+    "typescript",
+    "components",
+    "ui"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
     "build:dev": "vite build --mode development",
+    "build:lib": "vite build --config vite.lib.config.ts",
+    "build:types": "tsc --project tsconfig.lib.json --declaration --emitDeclarationOnly --outDir dist/lib",
+    "build:icons": "node scripts/sync-icons.mjs",
+    "build:all": "npm run build:lib && npm run build:types && npm run build:icons",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build:all",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
