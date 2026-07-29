@@ -73,12 +73,9 @@ export function DocSidebar({ className = "" }: DocSidebarProps) {
         ))}
       </ul>
       <div className="mt-6 rounded-xl border border-border bg-muted/40 p-3">
-        <p className="text-xs text-muted-foreground">
-          Retour à la{" "}
-          <a href="/" className="text-primary hover:underline">
-            Bibliothèque
-          </a>
-        </p>
+        <a href="/" className="text-xs text-primary hover:underline">
+          ← Retour à la Bibliothèque
+        </a>
       </div>
     </nav>
   );
