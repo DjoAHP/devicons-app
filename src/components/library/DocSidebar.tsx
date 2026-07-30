@@ -61,7 +61,7 @@ export function DocSidebar({ className = "" }: DocSidebarProps) {
           <li key={chapter.id}>
             <button
               onClick={() => scrollTo(chapter.id)}
-              className={`w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${
+              className={`w-full cursor-pointer rounded-lg px-3 py-2 text-left text-sm transition-colors ${
                 activeSection === chapter.id
                   ? "bg-sidebar-accent font-semibold text-accent"
                   : "text-muted-foreground hover:bg-sidebar-accent/50 hover:text-foreground"
