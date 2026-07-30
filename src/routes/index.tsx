@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
 
 function Bibliotheque() {
   const [recherche, setRecherche] = useState("");
-  const [style, setStyle] = useState<FiltreStyle>("plein");
+  const [style, setStyle] = useState<FiltreStyle>("tous");
   const [categorie, setCategorie] = useState<CategorieId | "toutes">("toutes");
   const [selection, setSelection] = useState<IconEntry | null>(null);
   const [menuOuvert, setMenuOuvert] = useState(false);
@@ -40,7 +40,7 @@ function Bibliotheque() {
   const resultats = useMemo(() => {
     const terme = recherche.trim().toLowerCase();
     return ICONES.filter((icone) => {
-      const correspondStyle = icone.style === style;
+      const correspondStyle = style === "tous" || icone.style === style;
       const correspondCategorie = categorie === "toutes" || icone.categorie === categorie;
       const correspondTerme =
         terme.length === 0 ||

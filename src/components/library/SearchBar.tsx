@@ -1,7 +1,6 @@
 import { SearchContourIcon } from "djodev-icons";
-import { LIBELLE_STYLE, type IconStyle } from "@/icons/registry";
 
-export type FiltreStyle = IconStyle;
+export type FiltreStyle = "tous" | "plein" | "contour";
 
 interface SearchBarProps {
   recherche: string;
@@ -11,8 +10,9 @@ interface SearchBarProps {
 }
 
 const ONGLETS: { id: FiltreStyle; libelle: string }[] = [
-  { id: "plein", libelle: LIBELLE_STYLE.plein },
-  { id: "contour", libelle: LIBELLE_STYLE.contour },
+  { id: "tous", libelle: "All" },
+  { id: "plein", libelle: "Fill" },
+  { id: "contour", libelle: "Line" },
 ];
 
 /** Champ de recherche + filtre de style. */

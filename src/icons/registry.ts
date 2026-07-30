@@ -82,6 +82,7 @@ import {
   Corbeille03Icon,
   Corbeille04Icon,
   Corbeille05Icon,
+  Corbeille06Icon,
 } from "./components/CorbeilleIcon";
 
 import {
@@ -116,6 +117,7 @@ import corbeille02Raw from "./svg/plein/corbeille/corbeille02.svg?raw";
 import corbeille03Raw from "./svg/plein/corbeille/corbeille03.svg?raw";
 import corbeille04Raw from "./svg/plein/corbeille/corbeille04.svg?raw";
 import corbeille05Raw from "./svg/plein/corbeille/corbeille05.svg?raw";
+import corbeille06Raw from "./svg/plein/corbeille/corbeille06.svg?raw";
 
 import uploadImages01Raw from "./svg/plein/upload/upload-images01.svg?raw";
 import uploadImages02Raw from "./svg/plein/upload/upload-images02.svg?raw";
@@ -133,14 +135,27 @@ import driveRaw from "./svg/plein/reseaux/drive.svg?raw";
 import facebookRaw from "./svg/plein/reseaux/facebook.svg?raw";
 import googleRaw from "./svg/plein/reseaux/google.svg?raw";
 import windowsRaw from "./svg/plein/reseaux/windows.svg?raw";
+import lensRaw from "./svg/plein/reseaux/lens.svg?raw";
 
 import { LogoAhpIcon, LogoAhp02Icon } from "./components/LogoAhpIcon";
 
-import { GithubIcon, InstaIcon, MessengerIcon, SkypeIcon, XIcon, DriveIcon, FacebookIcon, GoogleIcon, WindowsIcon } from "./components/ReseauIcon";
+import { GithubIcon, InstaIcon, MessengerIcon, SkypeIcon, XIcon, DriveIcon, FacebookIcon, GoogleIcon, WindowsIcon, LensIcon } from "./components/ReseauIcon";
 
 import mixIaRaw from "./svg/plein/ia/mixia.svg?raw";
 
 import { MixIaIcon } from "./components/IaIcon";
+
+import {
+  FlecheBBasIcon,
+  FlecheDDroiteIcon,
+  FlecheGGaucheIcon,
+  FlecheHHautIcon,
+} from "./components/ImportIcon";
+
+import flecheBBasContourRaw from "./svg/contour/import/fleche-b.svg?raw";
+import flecheDDroiteContourRaw from "./svg/contour/import/fleche-d.svg?raw";
+import flecheGGaucheContourRaw from "./svg/contour/import/fleche-g.svg?raw";
+import flecheHHautContourRaw from "./svg/contour/import/fleche-h.svg?raw";
 
 export type IconStyle = "plein" | "contour";
 
@@ -164,7 +179,7 @@ export interface IconEntry {
   fichier: string;
 }
 
-export type CategorieId = "interface" | "navigation" | "alertes" | "utilisateur" | "cubic" | "lecteur_audio" | "corbeille" | "upload" | "logo" | "reseaux" | "ia";
+export type CategorieId = "interface" | "navigation" | "alertes" | "utilisateur" | "cubic" | "lecteur_audio" | "corbeille" | "upload" | "logo" | "reseaux" | "ia" | "import";
 
 export const CATEGORIES: { id: CategorieId; libelle: string }[] = [
   { id: "navigation", libelle: "Navigation" },
@@ -178,6 +193,7 @@ export const CATEGORIES: { id: CategorieId; libelle: string }[] = [
   { id: "logo", libelle: "Logo" },
   { id: "reseaux", libelle: "Réseaux" },
   { id: "ia", libelle: "Intelligence Artificielle" },
+  { id: "import", libelle: "Import" },
 ];
 
 interface IconSource {
@@ -186,7 +202,7 @@ interface IconSource {
   motsCles: string[];
   categorie: CategorieId;
   base: string;
-  plein: { Component: ComponentType<IconProps>; svg: string };
+  plein?: { Component: ComponentType<IconProps>; svg: string };
   contour?: { Component: ComponentType<IconProps>; svg: string };
 }
 
@@ -540,6 +556,14 @@ const SOURCES: IconSource[] = [
     plein: { Component: Corbeille05Icon, svg: corbeille05Raw },
   },
   {
+    slug: "corbeille06",
+    nom: "Corb. 06",
+    motsCles: ["corbeille", "poubelle", "supprimer", "delete", "trash"],
+    categorie: "corbeille",
+    base: "Corbeille06",
+    plein: { Component: Corbeille06Icon, svg: corbeille06Raw },
+  },
+  {
     slug: "upload-images01",
     nom: "Upload 01",
     motsCles: ["upload", "images", "telecharger", "envoyer"],
@@ -652,6 +676,14 @@ const SOURCES: IconSource[] = [
     plein: { Component: WindowsIcon, svg: windowsRaw },
   },
   {
+    slug: "lens",
+    nom: "Lens",
+    motsCles: ["lens", "google", "lentille", "ar", "realite augmentee", "reseaux"],
+    categorie: "reseaux",
+    base: "Lens",
+    plein: { Component: LensIcon, svg: lensRaw },
+  },
+  {
     slug: "mixia",
     nom: "MixIa",
     motsCles: ["ia", "intelligence artificielle", "ai", "mixia", "robot"],
@@ -659,14 +691,45 @@ const SOURCES: IconSource[] = [
     base: "MixIa",
     plein: { Component: MixIaIcon, svg: mixIaRaw },
   },
+  {
+    slug: "fleche-bas",
+    nom: "Flèche Bas",
+    motsCles: ["fleche", "bas", "down", "arrow", "import", "direction"],
+    categorie: "import",
+    base: "FlecheBBas",
+    contour: { Component: FlecheBBasIcon, svg: flecheBBasContourRaw },
+  },
+  {
+    slug: "fleche-droite",
+    nom: "Flèche Droite",
+    motsCles: ["fleche", "droite", "right", "arrow", "import", "direction"],
+    categorie: "import",
+    base: "FlecheDDroite",
+    contour: { Component: FlecheDDroiteIcon, svg: flecheDDroiteContourRaw },
+  },
+  {
+    slug: "fleche-gauche",
+    nom: "Flèche Gauche",
+    motsCles: ["fleche", "gauche", "left", "arrow", "import", "direction"],
+    categorie: "import",
+    base: "FlecheGGauche",
+    contour: { Component: FlecheGGaucheIcon, svg: flecheGGaucheContourRaw },
+  },
+  {
+    slug: "fleche-haut",
+    nom: "Flèche Haut",
+    motsCles: ["fleche", "haut", "up", "arrow", "import", "direction"],
+    categorie: "import",
+    base: "FlecheHHaut",
+    contour: { Component: FlecheHHautIcon, svg: flecheHHautContourRaw },
+  },
 ];
 
 /** Liste complète des icônes disponibles, un enregistrement par couple nom/style. */
 export const ICONES: IconEntry[] = SOURCES.flatMap((source) => {
-  const styles: IconStyle[] = ["plein"];
-  if (source.contour) {
-    styles.push("contour");
-  }
+  const styles: IconStyle[] = [];
+  if (source.plein) styles.push("plein");
+  if (source.contour) styles.push("contour");
   return styles.map((style) => {
     const styleData = style === "plein" ? source.plein : source.contour;
     return {

@@ -55,6 +55,7 @@ export {
   Corbeille03Icon,
   Corbeille04Icon,
   Corbeille05Icon,
+  Corbeille06Icon,
 } from "./components/CorbeilleIcon";
 
 export {
@@ -65,6 +66,13 @@ export {
 
 export { LogoAhpIcon, LogoAhp02Icon } from "./components/LogoAhpIcon";
 
-export { GithubIcon, InstaIcon, MessengerIcon, SkypeIcon, XIcon, DriveIcon, FacebookIcon, GoogleIcon, WindowsIcon } from "./components/ReseauIcon";
+export { GithubIcon, InstaIcon, MessengerIcon, SkypeIcon, XIcon, DriveIcon, FacebookIcon, GoogleIcon, WindowsIcon, LensIcon } from "./components/ReseauIcon";
 
 export { MixIaIcon } from "./components/IaIcon";
+
+export {
+  FlecheBBasIcon,
+  FlecheDDroiteIcon,
+  FlecheGGaucheIcon,
+  FlecheHHautIcon,
+} from "./components/ImportIcon";
