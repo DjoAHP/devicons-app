@@ -6,7 +6,6 @@ import searchContourRaw from "./svg/contour/search.svg?raw";
 import userContourRaw from "./svg/contour/user.svg?raw";
 import alertPleinRaw from "./svg/plein/alert.svg?raw";
 import homePleinRaw from "./svg/plein/home.svg?raw";
-import searchPleinRaw from "./svg/plein/search.svg?raw";
 import userPleinRaw from "./svg/plein/user.svg?raw";
 
 import {
@@ -14,8 +13,7 @@ import {
   AlertPleinIcon,
   HomeContourIcon,
   HomePleinIcon,
-  SearchContourIcon,
-  SearchPleinIcon,
+  SearchIcon,
   UserContourIcon,
   UserPleinIcon,
   type IconProps,
@@ -157,6 +155,25 @@ import flecheDDroiteContourRaw from "./svg/contour/import/fleche-d.svg?raw";
 import flecheGGaucheContourRaw from "./svg/contour/import/fleche-g.svg?raw";
 import flecheHHautContourRaw from "./svg/contour/import/fleche-h.svg?raw";
 
+import {
+  ChronoIcon,
+  DiapaIcon,
+  DocvIcon,
+  MetroIcon,
+  SetlistIcon,
+  StackIcon,
+} from "./components/TonelabIcon";
+
+import chronoRaw from "./svg/plein/tonelab/chrono.svg?raw";
+import diapaRaw from "./svg/plein/tonelab/diapa.svg?raw";
+
+import { InfosIcon } from "./components/InterfaceIcon";
+import infosRaw from "./svg/plein/interface/infos.svg?raw";
+import docvRaw from "./svg/plein/tonelab/docv.svg?raw";
+import metroRaw from "./svg/plein/tonelab/metro.svg?raw";
+import setlistRaw from "./svg/plein/tonelab/setlist.svg?raw";
+import stackRaw from "./svg/plein/tonelab/stack.svg?raw";
+
 export type IconStyle = "plein" | "contour";
 
 export interface IconEntry {
@@ -179,7 +196,7 @@ export interface IconEntry {
   fichier: string;
 }
 
-export type CategorieId = "interface" | "navigation" | "alertes" | "utilisateur" | "cubic" | "lecteur_audio" | "corbeille" | "upload" | "logo" | "reseaux" | "ia" | "import";
+export type CategorieId = "interface" | "navigation" | "alertes" | "utilisateur" | "cubic" | "lecteur_audio" | "corbeille" | "upload" | "logo" | "reseaux" | "ia" | "import" | "tonelab";
 
 export const CATEGORIES: { id: CategorieId; libelle: string }[] = [
   { id: "navigation", libelle: "Navigation" },
@@ -194,6 +211,7 @@ export const CATEGORIES: { id: CategorieId; libelle: string }[] = [
   { id: "reseaux", libelle: "Réseaux" },
   { id: "ia", libelle: "Intelligence Artificielle" },
   { id: "import", libelle: "Import" },
+  { id: "tonelab", libelle: "Tonelab" },
 ];
 
 interface IconSource {
@@ -231,8 +249,7 @@ const SOURCES: IconSource[] = [
     motsCles: ["recherche", "loupe", "filtrer"],
     categorie: "interface",
     base: "Search",
-    plein: { Component: SearchPleinIcon, svg: searchPleinRaw },
-    contour: { Component: SearchContourIcon, svg: searchContourRaw },
+    contour: { Component: SearchIcon, svg: searchContourRaw },
   },
   {
     slug: "user",
@@ -722,6 +739,62 @@ const SOURCES: IconSource[] = [
     categorie: "import",
     base: "FlecheHHaut",
     contour: { Component: FlecheHHautIcon, svg: flecheHHautContourRaw },
+  },
+  {
+    slug: "chrono",
+    nom: "Chrono",
+    motsCles: ["chrono", "metronome", "bpm", "rythme", "tempo", "tonelab"],
+    categorie: "tonelab",
+    base: "Chrono",
+    plein: { Component: ChronoIcon, svg: chronoRaw },
+  },
+  {
+    slug: "diapa",
+    nom: "Diapa",
+    motsCles: ["diapa", "diapason", "tuner", "accordage", "tonelab"],
+    categorie: "tonelab",
+    base: "Diapa",
+    plein: { Component: DiapaIcon, svg: diapaRaw },
+  },
+  {
+    slug: "docv",
+    nom: "DocV",
+    motsCles: ["docv", "documentation", "livre", "manuel", "tonelab"],
+    categorie: "tonelab",
+    base: "Docv",
+    plein: { Component: DocvIcon, svg: docvRaw },
+  },
+  {
+    slug: "metro",
+    nom: "Metro",
+    motsCles: ["metro", "metronome", "rythme", "battement", "tonelab"],
+    categorie: "tonelab",
+    base: "Metro",
+    plein: { Component: MetroIcon, svg: metroRaw },
+  },
+  {
+    slug: "setlist",
+    nom: "Setlist",
+    motsCles: ["setlist", "liste", "morceaux", "playlist", "tonelab"],
+    categorie: "tonelab",
+    base: "Setlist",
+    plein: { Component: SetlistIcon, svg: setlistRaw },
+  },
+  {
+    slug: "stack",
+    nom: "Stack",
+    motsCles: ["stack", "pile", "effets", "pedales", "tonelab"],
+    categorie: "tonelab",
+    base: "Stack",
+    plein: { Component: StackIcon, svg: stackRaw },
+  },
+  {
+    slug: "infos",
+    nom: "Infos",
+    motsCles: ["info", "information", "aide", "question", "interface"],
+    categorie: "interface",
+    base: "Infos",
+    plein: { Component: InfosIcon, svg: infosRaw },
   },
 ];
 

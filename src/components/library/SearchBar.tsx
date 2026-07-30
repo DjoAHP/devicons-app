@@ -1,4 +1,4 @@
-import { SearchContourIcon } from "djodev-icons";
+import { SearchIcon } from "@/icons";
 
 export type FiltreStyle = "tous" | "plein" | "contour";
 
@@ -20,7 +20,7 @@ export function SearchBar({ recherche, onRechercheChange, style, onStyleChange }
   return (
     <div className="glass-panel flex flex-col gap-3 rounded-2xl p-3 sm:flex-row sm:items-center">
       <div className="relative min-w-0 flex-1">
-        <SearchContourIcon
+        <SearchIcon
           className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-muted-foreground"
           aria-hidden="true"
         />

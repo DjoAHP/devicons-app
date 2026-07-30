@@ -6,7 +6,9 @@ export type { IconProps } from "./components/types";
 
 export { AlertPleinIcon, AlertContourIcon } from "./components/AlertIcon";
 export { HomePleinIcon, HomeContourIcon } from "./components/HomeIcon";
-export { SearchPleinIcon, SearchContourIcon } from "./components/SearchIcon";
+export { SearchIcon } from "./components/SearchIcon";
+
+export { InfosIcon } from "./components/InterfaceIcon";
 export { UserPleinIcon, UserContourIcon } from "./components/UserIcon";
 
 export {
@@ -76,3 +78,12 @@ export {
   FlecheGGaucheIcon,
   FlecheHHautIcon,
 } from "./components/ImportIcon";
+
+export {
+  ChronoIcon,
+  DiapaIcon,
+  DocvIcon,
+  MetroIcon,
+  SetlistIcon,
+  StackIcon,
+} from "./components/TonelabIcon";

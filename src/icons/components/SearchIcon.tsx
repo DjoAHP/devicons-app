@@ -1,16 +1,9 @@
-import { contourBaseProps, pleinBaseProps, type IconProps } from "./types";
-
-/** Icône « Recherche » — style Plein. */
-export const SearchPleinIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
-  <svg {...pleinBaseProps} className={className} width={width} height={height} {...props}>
-    <path d="M10.75 3a7.75 7.75 0 1 0 4.72 13.9l3.82 3.81a1 1 0 0 0 1.41-1.41l-3.81-3.82A7.75 7.75 0 0 0 10.75 3Zm0 2a5.75 5.75 0 1 1 0 11.5 5.75 5.75 0 0 1 0-11.5Z" />
-  </svg>
-);
+import { contourBaseProps, type IconProps } from "./types";
 
 /** Icône « Recherche » — style Contour. */
-export const SearchContourIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
-  <svg {...contourBaseProps} className={className} width={width} height={height} {...props}>
-    <circle cx="10.75" cy="10.75" r="6.75" />
-    <path d="m15.75 15.75 4.25 4.25" />
+export const SearchIcon = ({ className, width = 24, height = 24, ...props }: IconProps) => (
+  <svg {...contourBaseProps} className={className} width={width} height={height} strokeWidth={3} strokeMiterlimit={10} {...props}>
+    <circle cx="9.39" cy="9.39" r="6.95" />
+    <line x1="14.31" y1="14.31" x2="21.56" y2="21.56" />
   </svg>
 );
